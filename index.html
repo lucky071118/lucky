@@ -35,11 +35,11 @@ p{text-indent:100px;
 
 
 <script>
-   $(document).ready(function(){
-                 $("button").click(funtion(){
-	            $("img").animate({left: '250px'});
+  $(document).ready(function(){
+          $("img").load(function(){
+	            alert("Image loaded.");
 		        });
-		 });
+	  });
 
 
 
