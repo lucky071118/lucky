@@ -40,9 +40,11 @@ p{text-indent:100px;
   $(document).ready(function(){
           $("img").mouseenter(function(){
 	    $("img").animate({left: '250px'});
-		        });
+		       });
+	   $("p").mouseleave(function(){
+	     $("p").animate({right: '250px'});
 	  });
-
+	   });
 
 
 </script>
