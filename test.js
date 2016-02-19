@@ -4,3 +4,9 @@ $(document).ready(function(){
 	});
 	$(".demo2").hide();
 });
+
+function a(){
+var x=document.getElementsByClassName("demo");
+x[0].innerHTML="fhhio";	
+	
+}
