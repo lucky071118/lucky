@@ -1,18 +1,7 @@
 $(document).ready(function(){
 	$(".btn").click(function(){
-		$(".btn").load("test.txt");
-		$.post("test.asp",{
-			name: "Donald Duck",
-			city: "Duckburg"
-			
-		},function(data,status){
-			alert("Data: " + data + "\nStatus: " + status);
-			
-		});
-       
+		$(".btn").load("http://luffy.ee.ncku.edu.tw/~lucky071118/test.txt");
 	});
-	
-
 });
 
 
