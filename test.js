@@ -1,12 +1,8 @@
 $(document).ready(function(){
 	$(".btn").click(function(){
-		$(".btn").fadeOut(1000);
+		$(".btn").load("http://www.w3schools.com/jquery/demo_test.txt");
 	});
-	$(".demo2").hide();
+	
 });
 
-function a(){
-var x=document.getElementsByClassName("demo");
-x[0].innerHTML="fhhio";	
-	
-}
+
