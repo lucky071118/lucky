@@ -1,13 +1,11 @@
 $(document).ready(function(){
 	$(".btn").click(function(){
-		$(".btn").load("test.txt",function(responseTxt, statusTxt, xhr){
-        if(statusTxt == "success")
-            alert("External content loaded successfully!");
-        if(statusTxt == "error")
-            alert("Error: " + xhr.status + ": " + xhr.statusText);
-    });
+		$(".btn").load("test.txt");
 	});
 	$(".demo").fadeOut(500);
+	$.get("test.asp",function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
 });
 
 
